@@ -1,11 +1,12 @@
-﻿/*
+﻿@charset "utf-8";
+/*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 2
    Tutorial Case
    
    TSS Typographic Style Sheet
-   Author: 
-   Date:   
+   Author: Rodrigo Del Rio Sifuentes
+   Date:   9/21/2022
    
    Filename: tss_styles.css
 
@@ -14,25 +15,40 @@
 
 
 /* HTML and Body Styles */
+html {
+    background-color: hsl(27, 72%, 72%);
+}
 
-
-
+body {
+    color: rgb(91, 91, 91);
+    background-color: ivory;
+}
 
 
 /* Heading Styles */
+article#about_tss h1 {
+    color: white;
+    background-color: rgb(222, 128, 60);
+}
 
+article#about_tss h2 {
+    color: white;
+    background-color: rgb(235, 177, 131);
+}
 
 
 
 
 
 /* Aside and Blockquote Styles */
+aside blockquote {
+    color: rgb(232, 165, 116)
+}
 
 
 
 
-
-/* Navigation Styles */	
+/* Navigation Styles */
 
 
 
