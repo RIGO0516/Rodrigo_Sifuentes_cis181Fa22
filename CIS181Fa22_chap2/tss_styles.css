@@ -33,20 +33,26 @@ body {
 }
 
 
-h1, h2 {
+h1,
+h2 {
     font-family: Quicksand, Verdana, Geneva, sans-serif;
 }
+
 /* Heading Styles */
-article.syllabus h1, article.syllabus h2 {
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+article.syllabus h1,
+article.syllabus h2 {
     background-color: rgb(255, 185, 255);
 
-    color: rgb {
-        101,
-        101,
-        101
-    }
-
-    ;
+    color: rgb (101, 101, 101);
 }
 
 
@@ -54,6 +60,10 @@ article.syllabus h1, article.syllabus h2 {
 
 
 /* Aside and Blockquote Styles */
+Aside {
+    font-size: 0.8em;
+}
+
 aside blockquote {
     color: rgb(232, 165, 116)
 }
@@ -62,7 +72,9 @@ aside blockquote {
 
 
 /* Navigation Styles */
-
+nav {
+    font-size: 0.8em;
+}
 
 
 
