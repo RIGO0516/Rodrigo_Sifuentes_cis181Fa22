@@ -51,10 +51,14 @@ h2 {
 article.syllabus h1,
 article.syllabus h2 {
     background-color: rgb(255, 185, 255);
-
     color: rgb (101, 101, 101);
 }
 
+h1,
+h2 {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1;
+}
 
 
 
@@ -76,6 +80,9 @@ nav {
     font-size: 0.8em;
 }
 
+nav>ul {
+    line-height: 2em;
+}
 
 
 
@@ -86,7 +93,13 @@ nav {
 
 
 /* Footer Styles */
-
+body>footer address {
+    background-color: rgb(222, 128, 60);
+    color: white;
+    color: rgba(255, 255, 255, 0.7);
+    font: normal small-caps bold 0.9em/3em Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+}
 
 
 
