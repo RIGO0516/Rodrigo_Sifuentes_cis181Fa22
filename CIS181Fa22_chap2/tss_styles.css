@@ -87,7 +87,17 @@ nav>ul {
 
 
 /* List Styles */
+article.syllabus ol {
+    list-style-type: upper-roman;
+}
 
+article.syllabus ol ol {
+    list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+    list-style-type: decimal;
+}
 
 
 
