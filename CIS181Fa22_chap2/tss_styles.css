@@ -69,9 +69,23 @@ Aside {
 }
 
 aside blockquote {
-    color: rgb(232, 165, 116)
+    color: rgb(232, 165, 116) margin: 20px 5px;
+    quotes: "\201C""\201D";
 }
 
+aside blockquote::before {
+    content: open-quote;
+    font-family: 'Times New Roman', times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+aside blockquote::after {
+    content: close-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
 
 
 
@@ -83,17 +97,36 @@ nav {
 nav>ul {
     line-height: 2em;
     list-style-type: none;
+    padding-left: 5px;
 }
 
+nav>ul>li.newgroup {
+    margin-top: 20px;
+}
+
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    color: rgb(255, 64, 255) text-decoration: underline;
+}
 
 
 /* List Styles */
-article.syllabus ol {
-    list-style-type: upper-roman;
+article#about_tss ul li:first-of-type {
+    list-style-image: url(runicon.png);
 }
 
-article.syllabus ol ol {
-    list-style-type: upper-alpha;
+article#about_tss ul li:nth-of-type(2) {
+    list-style-image: url(bikeicon.png);
+}
+
+article#about_tss ul li:last-of-type {
+    list-style-image: url(swimicon.png);
 }
 
 article.syllabus ol ol ol {
