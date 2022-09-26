@@ -69,7 +69,8 @@ Aside {
 }
 
 aside blockquote {
-    color: rgb(232, 165, 116) margin: 20px 5px;
+    color: rgb(232, 165, 116);
+    margin: 20px 5px;
     quotes: "\201C""\201D";
 }
 
@@ -112,7 +113,8 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover,
 nav>ul>li>a:active {
-    color: rgb(255, 64, 255) text-decoration: underline;
+    color: rgb(255, 64, 255);
+    text-decoration: underline;
 }
 
 
