@@ -13,7 +13,15 @@
 
 /* Form Layout Styles */
 
+div.formRow {
+   display: flex;
+   flex-flow: row wrap;
+   margin: 7px 0px;
+}
 
+div.formRow > * {
+   flex: 1 1 150px;
+}
 
 /* Legend Styles */
 
