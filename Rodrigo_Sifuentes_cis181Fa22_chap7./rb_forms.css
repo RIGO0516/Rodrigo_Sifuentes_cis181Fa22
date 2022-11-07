@@ -13,6 +13,20 @@
 
 /* Form Layout Styles */
 
+form#survey {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+   background-color: rgb(240, 232, 181);
+   border-radius: 20px;
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
 div.formRow {
    display: flex;
    flex-flow: row wrap;
@@ -25,7 +39,11 @@ div.formRow > * {
 
 /* Legend Styles */
 
-
+legend {
+   background-color: rgb(179, 20, 25);
+   color: white;
+   padding: 5px;
+}
 
 /* Text Area Styles */
 

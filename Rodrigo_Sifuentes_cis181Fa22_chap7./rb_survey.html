@@ -59,7 +59,7 @@
                 <legend>Customer Information</legend>
                 <div class="formRow">
                     <label for="name">Name*</label>
-                    <input name="custName" id="name" type="text" />
+                    <input name="custName" id="name" type="text" placeholder="first and last name" />
                 </div>
 
                 <div class="formRow">
@@ -69,32 +69,91 @@
 
                 <div class="formRow">
                     <label for="city">City</label>
-                    <input name="custCity" id="city" type="text" />
+                    <input name="custCity" id="city" type="text" value="Ormond Beach" />
                 </div>
 
                 <div class="formRow">
                     <label for="state">State</label>
-                    <input name="custState" id="state" type="text" />
+                    <input name="custState" id="state" type="text" value="FL" />
                 </div>
 
                 <div class="formRow">
                     <label for="zip">Postal code</label>
-                    <input name="custZip" id="zip" type="text" />
+                    <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" />
                 </div>
 
                 <div class="formRow">
                     <label for="phone">Phone number</label>
-                    <input name="custPhone" id="phone" type="text" />
+                    <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnnn" />
                 </div>
 
                 <div class="formRow">
                     <label for="mail">E-mail*</label>
                     <input name="custEmail" id="mail" type="text" />
                 </div>
+
+                <div class="formRow">
+                    <label for="info">Where did you hear about us?
+                        <br />(select all that apply)
+                    </label>
+                    <select name="infoSrc" id="info" size="5" multiple>
+                        <option value="internet">Internet</option>
+                        <option value="mag">Magazine</option>
+                        <option value="news">Newspaper</option>
+                        <option value="word">Word of Mouth</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
             </fieldset>
 
             <fieldset id="expInfo">
                 <legend>Share Your Experiences at Red Ball Pizza</legend>
+
+                <div class="formRow">
+                    <label for="visit">Date of visit</label>
+                    <input name="visitDate" id="visit" type="date" />
+                </div>
+
+                <div class="formRow">
+                    <label for="order">Order type</label>
+                    <select name="orderType" id="order">
+                        <option value="order1">Carry out</option>
+                        <option value="order2">Delivery</option>
+                        <option value="order3" selected>Dine in</option>
+                        <option value="order4">Take 'n bake</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label>Was your service friendly?</label>
+                    <fieldset class="optGroup">
+                        <label for="fYes">Yes</label>
+                        <input name="sFriend" id="fyes" value="yes" type="radio" />
+                        <label for="fNo">No</label>
+                        <input name="sFriend" id="fNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Was your order correct?</label>
+                    <fieldset class="optGroup">
+                        <label for="cYes">Yes</label>
+                        <input name="oCorrect" id="cYes" value="yes" type="radio" />
+                        <label for="cNo">No</label>
+                        <input name="oCorrect" id="cNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Was your food hot?</label>
+                    <fieldset class="optGroup">
+                        <label for="hYes">Yes</label>
+                        <input name="foodHot" id="hYes" value="yes" type="radio" />
+                        <label for="hNo">No</label>
+                        <input name="foodHot" id="hNo" value="no" type="radio" />
+                    </fieldset>
+                </div>
+
             </fieldset>
         </form>
 
