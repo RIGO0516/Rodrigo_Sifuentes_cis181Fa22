@@ -154,8 +154,13 @@
                     </fieldset>
                 </div>
 
-                <label for="commBox">Tell us more about your experiences!</label>
-                <textarea name="custExp" id="commBox"></textarea>
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                <label for="mailCB">Add me to your mailing list for great coupons and specials</label>
+
+                <div class="formRow">
+                    <label for="dineSpin">How many times do you dine out per month</label>
+                    <input name="dineOut" id="dineSpin" type="number" value="1" step="1" min="0" max="20" />
+                </div>
 
             </fieldset>
         </form>
