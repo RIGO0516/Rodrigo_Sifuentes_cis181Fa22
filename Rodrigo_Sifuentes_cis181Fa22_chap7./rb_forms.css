@@ -18,7 +18,7 @@ form#survey {
    flex-flow: row wrap;
 }
 
-form#survey > fieldset {
+form#survey>fieldset {
    background-color: rgb(240, 232, 181);
    border-radius: 20px;
    flex: 1 1 300px;
@@ -33,7 +33,7 @@ div.formRow {
    margin: 7px 0px;
 }
 
-div.formRow > * {
+div.formRow>* {
    flex: 1 1 150px;
 }
 
@@ -51,11 +51,42 @@ legend {
 
 /* Spinner Styles */
 
-
+div.formRow>input#dineSpin {
+   flex: 0 0 50px;
+}
 
 /* Form Button Styles */
 
+div#buttons {
+   text-align: center;
+   width: 100%;
+}
 
+input[type='submit'],
+input[type='reset'] {
+   font-size: 1.2em;
+   padding: 5px;
+   margin: 15px;
+}
 
 /* Validation Styles */
 
+input:focus,
+select:focus,
+textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
